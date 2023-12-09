@@ -1,0 +1,325 @@
+/* -------------RESETS------------- */
+/*Resets are used for overwriting default html tag properties*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  *:before,
+  *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  html,
+  body,
+  div,
+  span,
+  applet,
+  object,
+  iframe,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  blockquote,
+  pre,
+  a,
+  abbr,
+  acronym,
+  address,
+  big,
+  cite,
+  code,
+  del,
+  dfn,
+  em,
+  font,
+  ins,
+  kbd,
+  q,
+  s,
+  samp,
+  small,
+  strike,
+  strong,
+  sub,
+  sup,
+  tt,
+  var,
+  dl,
+  dt,
+  dd,
+  ol,
+  ul,
+  li,
+  fieldset,
+  form,
+  label,
+  legend,
+  table,
+  caption,
+  tbody,
+  tfoot,
+  thead,
+  tr,
+  th,
+  td {
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+    scroll-behavior: smooth;
+    list-style: none;
+  }
+  html {
+    font-size: 62.5%;
+    height: 100%;
+  }
+  body {
+    color: #2b2b2b;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    overflow-x: hidden;
+    line-height: 1.4;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  article,
+  aside,
+  footer,
+  header,
+  nav,
+  section,
+  time {
+    display: block;
+  }
+  a {
+    text-decoration: none;
+  }
+  img {
+    max-width: 100%;
+  }
+
+
+/*header*/
+
+.header {
+    background-color: #C1272C;
+}
+
+.header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.header .container img {
+    width: 50rem;
+}
+
+.header .container .container__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background: white;
+}
+
+.header .container .container__text img {
+    width: 150rem;
+}
+
+.header .container .container__text h1 {
+    display: flex;
+    font-size: 12rem;
+    font-weight: 900;
+    color: #00413f;
+}
+
+.header .container .container__text h3 {
+    display: flex;
+    font-size: 8rem;
+    font-weight: bolder;
+        color: #00413f;
+} 
+
+.header .container .container__text p {
+    padding: 2rem;
+    display: block;
+    text-align: center;
+    font-size: 4rem;
+}
+
+.details {
+    padding-bottom: 5rem;
+}
+
+.details a {
+    display: flex;
+    background-color: #00413f;
+    border: 1px solid;
+    border-radius: 1rem;
+    color: white;
+    padding: 1rem ;
+    justify-content: center;
+    margin-left: 55rem;
+    margin-right: 55rem;
+    font-size: 4rem;
+}
+
+.bottom {
+    padding-top: 3rem;
+    background: #C1272C;
+    display: flex;
+    justify-content: space-around;
+    font-size: 2.5rem;
+    color: white;
+}
+
+.bottom p {
+    display: flex;
+    align-items: center;
+
+}
+
+.bottom a {
+    text-decoration: underline;
+    color: white;
+    padding-left: 1rem;
+}
+
+.bottom ul {
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+    gap: 5rem;
+    color: white;
+    padding-left: 60rem;
+}
+
+.bottom__unsub {
+    background: #C1272C;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 2.5rem;
+    color: white;
+    padding: 2rem;
+    padding-right: 4rem;
+}
+
+.bottom__unsub a{
+    padding-left: 2.3rem;
+    text-decoration: underline;
+    color: white;
+}
+
+
+/*mobile*/
+
+@media screen and (max-width: 480px) {
+    .header .container img {
+        width: 20rem;
+    }
+
+    .header .container .container__text img {
+        width: 44.5rem;
+    }
+
+    .header .container .container__text h1 {
+        display: flex;
+        font-size: 4rem;
+        font-weight: 900;
+        color: #00413f;
+    }
+    
+    .header .container .container__text h3 {
+        display: flex;
+        font-size: 3rem;
+        font-weight: bolder;
+            color: #00413f;
+    } 
+    
+    .header .container .container__text p {
+        padding: 2rem;
+        display: block;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .details {
+    padding-bottom: 5rem;
+}
+
+.details a {
+    display: flex;
+    background-color: #00413f;
+    border: 1px solid;
+    border-radius: 1rem;
+    color: white;
+    padding: 1rem ;
+    justify-content: center;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    font-size: 1rem;
+}
+
+.bottom {
+    padding-top: 3rem;
+    background: #C1272C;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1rem;
+    color: white;
+}
+
+.bottom p {
+    display: flex;
+    align-items: center;
+
+}
+
+.bottom a {
+    text-decoration: underline;
+    color: white;
+    padding-left: 0.2rem;
+}
+
+.bottom ul {
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+    gap: 1rem;
+    color: white;
+    padding-left: 3.1rem;
+}
+
+.bottom__unsub {
+    background: #C1272C;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1rem;
+    color: white;
+    padding: 2rem;
+    padding-right: 4rem;
+}
+
+.bottom__unsub a{
+    padding-left: 2.3rem;
+    text-decoration: underline;
+    color: white;
+}
+}
